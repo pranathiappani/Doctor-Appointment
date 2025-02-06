@@ -1,0 +1,90 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url('./health-still-life-with-copy-space.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+
+}
+
+
+.home-container, .form-container, .appointment-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+
+h1, h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+p {
+    color: #555;
+    margin-top: 15px;
+}
+
+input[type="text"], input[type="password"], input[type="date"], select {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    font-size: 1em;
+    color: #555;
+    transition: background 0.3s ease;
+}
+
+input:focus, select:focus {
+    background-color: #e0e0e0;
+    outline: none;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    flex: 1;
+    padding: 12px;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+button, .button {
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover, .button:hover {
+    background: linear-gradient(135deg, #ff4b2b 0%, #ff416c 100%);
+    transform: scale(1.05);
+}
+
+button:active, .button:active {
+    transform: scale(0.98);
+}
